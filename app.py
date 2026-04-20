@@ -10,7 +10,7 @@ def ebay_deletion():
     challenge_code = request.args.get("challenge_code")
     if challenge_code:
         import hashlib
-        endpoint_url = "https://your-render-url.onrender.com/ebay/deletion"
+        endpoint_url = "https://ebay-endpoint-9b13.onrender.com/ebay/deletion"
         hash_input = challenge_code + VERIFICATION_TOKEN + endpoint_url
         challenge_response = hashlib.sha256(hash_input.encode()).hexdigest()
         return jsonify({"challengeResponse": challenge_response})
