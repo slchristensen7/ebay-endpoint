@@ -2,7 +2,7 @@ from flask import Flask, request, jsonify
 
 app = Flask(__name__)
 
-VERIFICATION_TOKEN = "your_random_string_here"  # paste your token here
+VERIFICATION_TOKEN = "peter_piper_picked_a_peck_qje8gfx9rhn-MBM4gqt"  # paste your token here
 
 @app.route("/ebay/deletion", methods=["GET", "POST"])
 def ebay_deletion():
